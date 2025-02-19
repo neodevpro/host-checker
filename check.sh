@@ -56,4 +56,4 @@ export -f check_domain
 
 # Use parallel to run the check_domain function concurrently with 128 threads
 # Read the domain list from an input file, assuming 'block' contains the list of domains
-cat block | parallel -j 128 check_domain
+cat block | parallel -j 512 check_domain
